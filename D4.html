@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f7fc;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Navigation */
+
+nav{
+    background:#1e3a8a;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+nav h2{
+    color:white;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#fbbf24;
+}
+
+/* Hero Section */
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    background:linear-gradient(to right,#2563eb,#0ea5e9);
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#fbbf24;
+    color:#000;
+    padding:14px 30px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* Sections */
+
+section{
+    padding:70px 10%;
+}
+
+section h2{
+    text-align:center;
+    font-size:35px;
+    margin-bottom:40px;
+    color:#1e3a8a;
+}
+
+/* About */
+
+.about{
+    text-align:center;
+    background:white;
+    border-radius:10px;
+    padding:40px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+/* Skills */
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.skill-box{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.skill-box:hover{
+    transform:translateY(-8px);
+}
+
+/* Education */
+
+.education{
+    display:grid;
+    gap:20px;
+}
+
+.edu-box{
+    background:white;
+    padding:25px;
+    border-left:6px solid #2563eb;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+/* Contact */
+
+.contact{
+    background:white;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input,textarea{
+    padding:15px;
+    margin:12px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+textarea{
+    resize:none;
+    height:140px;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:15px;
+    font-size:17px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1e40af;
+}
+
+/* Footer */
+
+footer{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+    flex-direction:column;
+    text-align:center;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero h1{
+    font-size:35px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+
+<h2>My Portfolio</h2>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="hero" id="home">
+
+<h1>Hi, I'm Ritik Malik</h1>
+
+<p>Web Developer | AI & ML Enthusiast | Student</p>
+
+<a href="#contact" class="btn">Contact Me</a>
+
+</section>
+
+<!-- About -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="about">
+
+<p>
+I am a passionate Computer Science student interested in Web Development,
+Artificial Intelligence, and Machine Learning. I enjoy building responsive
+websites and real-world projects.
+</p>
+
+</div>
+
+</section>
+
+<!-- Skills -->
+
+<section id="skills">
+
+<h2>My Skills</h2>
+
+<div class="skills-container">
+
+<div class="skill-box">
+<h3>HTML5</h3>
+<p>Semantic HTML and Web Structure</p>
+</div>
+
+<div class="skill-box">
+<h3>CSS3</h3>
+<p>Responsive Design & Flexbox</p>
+</div>
+
+<div class="skill-box">
+<h3>JavaScript</h3>
+<p>Interactive Web Applications</p>
+</div>
+
+<div class="skill-box">
+<h3>Python</h3>
+<p>Machine Learning & Data Analysis</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Education -->
+
+<section id="education">
+
+<h2>Education</h2>
+
+<div class="education">
+
+<div class="edu-box">
+<h3>Bachelor of Computer Applications</h3>
+<p>Bennett University</p>
+<p>2024 - 2028</p>
+</div>
+
+<div class="edu-box">
+<h3>Higher Secondary Education</h3>
+<p>Scottish International School</p>
+<p>Completed with Good Academic Performance</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<div class="contact">
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<p>© 2026 Ritik Malik | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
